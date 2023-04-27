@@ -1,6 +1,6 @@
 #include "ft_printf.h"
 
-int ft_ptr_len(uintptr_t ptr);
+// int ft_ptr_len(uintptr_t ptr);
 int ft_print_ptr(uintptr_t ptr);
 
 int ft_put_ptr(unsigned long long ptr)

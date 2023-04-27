@@ -35,7 +35,7 @@ int ft_print_all(va_list args, char *str)
             i++;
         }
         else
-            len += ft_print_c(str[i]);
+            len += ft_put_c(str[i]);
         i++;
     }
     return (len);

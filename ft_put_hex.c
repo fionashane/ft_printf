@@ -1,5 +1,7 @@
 #include "ft_printf.h"
 
+int ft_print_hex(unsigned int n, char type);
+
 int ft_put_hex(unsigned int n, char type)
 {
     int len;
@@ -19,8 +21,8 @@ int ft_print_hex(unsigned int n, char type)
     len = 0;
     if (n >= 16)
     {
-        ft_print_ptr(n / 16);
-        ft_print_ptr(n % 16);
+        ft_print_hex(n / 16, type);
+        ft_print_hex(n % 16, type);
     }
     else
     {

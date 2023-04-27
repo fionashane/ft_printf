@@ -12,12 +12,8 @@ int ft_put_str(char *str)
 
     len = 0;
     if (!str)
-        str = ft_strlcpy(str, "(null)", 6);
+        len += write(1, "(null)", 6);
     while (str[len])
-    {
-        ft_put_c(str[len]);
-        len++;
-    }
-    free(str);
+        len += ft_put_c(str[len]);
     return (len);
 }
