@@ -24,7 +24,6 @@ int ft_print_all(va_list args, char *str)
     int len;
     int i;
     int j;
-    t_flag flag;
 
     len = 0;
     i = 0;
@@ -48,20 +47,18 @@ int ft_print_arg(va_list args, char type)
 
     len = 0;
     if (type == '%')
-        len += ft_print_c('%');
+        len += ft_put_c('%');
     else if (type == 'c')
-        len += ft_print_c(va_arg(args, int));
+        len += ft_put_c(va_arg(args, int));
     else if (type =='s')
-        len += ft_print_str(va_arg(args, const char *));
+        len += ft_put_str(va_arg(args, char *));
     else if (type == 'p')
-        len += ft_print_ptr((unsigned long int)va_arg(args, void *));
+        len += ft_put_ptr(va_arg(args, unsigned long long));
     else if (type == 'd' || type == 'i')
-        len += ft_print_int(va_arg(args, int));
+        len += ft_put_int(va_arg(args, int));
     else if (type == 'u')
-        len += ft_print_unsigned(va_arg(args, unsigned int));
-    else if (type == 'x')
-        len += ft_print_hex(va_arg(args, unsigned int), 'x');
-    else if (type == 'X')
-        len += ft_print_hex(va_arg(args, unsigned int), 'X');
+        len += ft_put_uint(va_arg(args, unsigned int));
+    else if (type == 'x' || type == 'X')
+        len += ft_put_hex(va_arg(args, unsigned int), type);
     return (len);
 }
