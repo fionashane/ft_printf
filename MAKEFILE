@@ -10,10 +10,10 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME			= ft_printf.a
+NAME			= libftprintf.a
 
-SRCS			=	ft_printf.c ft_libft.c ft_put_c_str.c \
-					ft_put_ptr.c ft_put_int_uint ft_put_hex \
+SRCS			=	ft_printf.c ft_libft.c ft_put_c_str.c ft_uitoa.c \
+					ft_put_ptr.c ft_put_int_uint.c ft_put_hex.c \
 
 OBJS			= $(SRCS:.c=.o)
 CC				= gcc
