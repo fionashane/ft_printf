@@ -19,7 +19,7 @@ The project aims to introduce students to the basics of variadic functions and s
 To use the **ft_printf** function, you need to:
 1. Clone the repository to your local machine
 ```bash
-git clone https://github.com/your_username/ft_printf.git
+git clone https://github.com/fionashane/ft_printf.git
 ```
 
 2. Compile the library using the Makefile
@@ -53,7 +53,3 @@ The **ft_printf** function supports the following format specifiers:
 ## Credits
 
 The **ft_printf** project was developed by [42 school](https://www.42adel.org.au).
-
-## License
-
-This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
