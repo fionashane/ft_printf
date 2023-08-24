@@ -49,7 +49,3 @@ The **ft_printf** function supports the following format specifiers:
 - `%x`: hexadecimal integer (lowercase)
 - `%X`: hexadecimal integer (uppercase)
 - `%%`: literal `%` character
-
-## Credits
-
-The **ft_printf** project was developed by [42 school](https://www.42adel.org.au).
