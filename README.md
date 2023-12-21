@@ -3,7 +3,7 @@
 
 ![ft_printf](https://img.shields.io/badge/ft_printf-42-success)
 
-The **ft_printf** project is part of the curriculum at [42 school](https://www.42adel.org.au) and aims to create a function that mimics the behavior of the standard C library function `printf`.
+The **ft_printf** project is part of the curriculum at [42 Adelaide](https://www.42adel.org.au) and aims to create a function that mimics the behavior of the standard C library function `printf`.
 
 ## Project Objectives
 
